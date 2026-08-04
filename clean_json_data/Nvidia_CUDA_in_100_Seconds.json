@@ -1,0 +1,365 @@
+{
+    "chunks": [
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " Kuda, a parallel computing platform that allows you to use your GPU for more than just",
+            "start": "0.00",
+            "end": "5.30"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " playing video games.",
+            "start": "5.30",
+            "end": "6.64"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " Compute Unified Device Architecture was developed by NVIDIA in 2007 based on the prior",
+            "start": "6.64",
+            "end": "11.52"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " work of Ian Buck in John Nichols.",
+            "start": "11.52",
+            "end": "13.76"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " Since then, Kuda has revolutionized the world by allowing humans to compute large blocks",
+            "start": "13.76",
+            "end": "17.80"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " of data in parallel, which is unlock the true potential of the deep neural networks behind",
+            "start": "17.80",
+            "end": "22.20"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " artificial intelligence.",
+            "start": "22.20",
+            "end": "23.44"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " The graphics processing unit, or GPU, is historically used for what the name implies",
+            "start": "23.44",
+            "end": "27.88"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " to compute graphics.",
+            "start": "27.88",
+            "end": "29.28"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " The play game in 1080p at 60fps, you've got over 2 million pixels on the screen that",
+            "start": "29.28",
+            "end": "34.16"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " may need to be recalculated after every frame, which requires hardware that can do a lot",
+            "start": "34.16",
+            "end": "38.08"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " of matrix multiplication and vector transformations in parallel.",
+            "start": "38.08",
+            "end": "41.56"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " And I mean a lot, modern GPUs are measured in teraphlops, or how many trillions of floating",
+            "start": "41.56",
+            "end": "46.04"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " point operations can at handle per second.",
+            "start": "46.04",
+            "end": "48.32"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " Unlike modern CPUs like the Intel i9, which has 24 cores, a modern GPU like the RTX 4090 has",
+            "start": "48.32",
+            "end": "54.92"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " over 16,000 cores.",
+            "start": "54.92",
+            "end": "56.80"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " A CPU is designed to be versatile, while a GPU is designed to go really fast and parallel.",
+            "start": "56.80",
+            "end": "61.76"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " Kuda allows developers to tap into the GPU's power, and data scientists all around the",
+            "start": "61.76",
+            "end": "65.84"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " world are using it this very moment, trying to train the most powerful machine learning",
+            "start": "65.84",
+            "end": "69.56"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " models.",
+            "start": "69.56",
+            "end": "70.56"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " It works like this.",
+            "start": "70.56",
+            "end": "71.56"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " You write a function called a Kuda kernel that runs on the GPU.",
+            "start": "71.56",
+            "end": "74.64"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " You then copy some data from your main RAM over to the GPU's memory, then the CPU will",
+            "start": "74.64",
+            "end": "79.16"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " tell the GPU to execute that function or kernel in parallel.",
+            "start": "79.16",
+            "end": "82.68"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " The code is executed in a block, which itself organizes threads into a multi-dimensional",
+            "start": "82.68",
+            "end": "86.88"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " grid.",
+            "start": "86.88",
+            "end": "87.88"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " Then the final result from the GPU is copied back to the main memory.",
+            "start": "87.88",
+            "end": "90.88"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " It piece a cake, let's go ahead and build a Kuda application right now.",
+            "start": "90.88",
+            "end": "94.28"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " First you'll need an NVIDIA GPU, then installed a Kuda toolkit.",
+            "start": "94.28",
+            "end": "97.76"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " Kuda includes device drivers, a runtime, compilers, and dev tools, but the actual code",
+            "start": "97.76",
+            "end": "102.12"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " is most often written in C++.",
+            "start": "102.12",
+            "end": "104.28"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " As I'm doing here in Visual Studio, first we use the global specifier to define a function",
+            "start": "104.28",
+            "end": "108.84"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " or a Kuda kernel that runs on the actual GPU.",
+            "start": "108.84",
+            "end": "111.80"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " This function adds two vectors or arrays together.",
+            "start": "111.80",
+            "end": "114.64"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " It takes pointer arguments A and B, which are the two vectors to be added together, and",
+            "start": "114.64",
+            "end": "118.56"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " pointer C for the result.",
+            "start": "118.56",
+            "end": "120.12"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " C equals A plus B, but because hypothetically we're doing billions of operations in parallel,",
+            "start": "120.12",
+            "end": "124.88"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " we need to calculate the global index of the thread in the block that we're working on.",
+            "start": "124.88",
+            "end": "128.76"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " From there, we can use Managed, which tells Kuda this data can be accessed from both the",
+            "start": "128.76",
+            "end": "132.84"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " host CPU and the device GPU.",
+            "start": "132.84",
+            "end": "135.48"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " Without the need to manually copy data between them, and now we can write a main function",
+            "start": "135.48",
+            "end": "139.12"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " for the CPU.",
+            "start": "139.12",
+            "end": "140.12"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " That runs the Kuda kernel.",
+            "start": "140.12",
+            "end": "141.36"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " We use a for loop to initialize our arrays with data.",
+            "start": "141.36",
+            "end": "144.12"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " Then from there, we pass this data to the add function to run it on the GPU, but you might",
+            "start": "144.12",
+            "end": "148.68"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " be wondering what these weird triple brackets are.",
+            "start": "148.68",
+            "end": "150.96"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " They allow us to configure the Kuda kernel launch to control how many blocks and how many",
+            "start": "150.96",
+            "end": "154.92"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " threads per block are used to run this code in parallel.",
+            "start": "154.92",
+            "end": "157.52"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " And that's crucial for optimizing multidimensional data structures like tensors used in deep",
+            "start": "157.52",
+            "end": "161.76"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " learning.",
+            "start": "161.76",
+            "end": "162.76"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " From there, Kuda device synchronized will pause the execution of this code and wait for",
+            "start": "162.76",
+            "end": "166.52"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " it to complete on the GPU.",
+            "start": "166.52",
+            "end": "168.12"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " When it finishes, and copies the data back to the host machine, we can then use the",
+            "start": "168.12",
+            "end": "171.32"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " result and print it to the standard output.",
+            "start": "171.32",
+            "end": "173.56"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " Now let's execute this code with a Kuda compiler by clicking the play button.",
+            "start": "173.56",
+            "end": "177.32"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " Congratulations, you just ran 256 threads in parallel on your GPU.",
+            "start": "177.32",
+            "end": "181.64"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " But if you want to go beyond, Nvidia's GTC conference is coming up in a few weeks.",
+            "start": "181.64",
+            "end": "185.44"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " It's free to attend virtually in featuring talks about building massive parallel systems",
+            "start": "185.44",
+            "end": "189.28"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " with Kuda.",
+            "start": "189.28",
+            "end": "190.28"
+        },
+        {
+            "video_name": "Nvidia_CUDA_in_100_Seconds",
+            "text": " Thanks for watching, and I will see you in the next one.",
+            "start": "190.28",
+            "end": "192.20"
+        }
+    ],
+    "full_text": " Kuda, a parallel computing platform that allows you to use your GPU for more than just playing video games. Compute Unified Device Architecture was developed by NVIDIA in 2007 based on the prior work of Ian Buck in John Nichols. Since then, Kuda has revolutionized the world by allowing humans to compute large blocks of data in parallel, which is unlock the true potential of the deep neural networks behind artificial intelligence. The graphics processing unit, or GPU, is historically used for what the name implies to compute graphics. The play game in 1080p at 60fps, you've got over 2 million pixels on the screen that may need to be recalculated after every frame, which requires hardware that can do a lot of matrix multiplication and vector transformations in parallel. And I mean a lot, modern GPUs are measured in teraphlops, or how many trillions of floating point operations can at handle per second. Unlike modern CPUs like the Intel i9, which has 24 cores, a modern GPU like the RTX 4090 has over 16,000 cores. A CPU is designed to be versatile, while a GPU is designed to go really fast and parallel. Kuda allows developers to tap into the GPU's power, and data scientists all around the world are using it this very moment, trying to train the most powerful machine learning models. It works like this. You write a function called a Kuda kernel that runs on the GPU. You then copy some data from your main RAM over to the GPU's memory, then the CPU will tell the GPU to execute that function or kernel in parallel. The code is executed in a block, which itself organizes threads into a multi-dimensional grid. Then the final result from the GPU is copied back to the main memory. It piece a cake, let's go ahead and build a Kuda application right now. First you'll need an NVIDIA GPU, then installed a Kuda toolkit. Kuda includes device drivers, a runtime, compilers, and dev tools, but the actual code is most often written in C++. As I'm doing here in Visual Studio, first we use the global specifier to define a function or a Kuda kernel that runs on the actual GPU. This function adds two vectors or arrays together. It takes pointer arguments A and B, which are the two vectors to be added together, and pointer C for the result. C equals A plus B, but because hypothetically we're doing billions of operations in parallel, we need to calculate the global index of the thread in the block that we're working on. From there, we can use Managed, which tells Kuda this data can be accessed from both the host CPU and the device GPU. Without the need to manually copy data between them, and now we can write a main function for the CPU. That runs the Kuda kernel. We use a for loop to initialize our arrays with data. Then from there, we pass this data to the add function to run it on the GPU, but you might be wondering what these weird triple brackets are. They allow us to configure the Kuda kernel launch to control how many blocks and how many threads per block are used to run this code in parallel. And that's crucial for optimizing multidimensional data structures like tensors used in deep learning. From there, Kuda device synchronized will pause the execution of this code and wait for it to complete on the GPU. When it finishes, and copies the data back to the host machine, we can then use the result and print it to the standard output. Now let's execute this code with a Kuda compiler by clicking the play button. Congratulations, you just ran 256 threads in parallel on your GPU. But if you want to go beyond, Nvidia's GTC conference is coming up in a few weeks. It's free to attend virtually in featuring talks about building massive parallel systems with Kuda. Thanks for watching, and I will see you in the next one."
+}

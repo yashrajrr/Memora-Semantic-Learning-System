@@ -1,0 +1,221 @@
+{
+    "chunks": [
+        {
+            "video_name": "TensorFlow in 100 Seconds",
+            "text": " TensorFlow, an open-source machine learning framework famous for powering deep neural networks with high-level code.",
+            "start": "0.00",
+            "end": "6.62"
+        },
+        {
+            "video_name": "TensorFlow in 100 Seconds",
+            "text": " It was developed by the Google Brain team and first released in 2015.",
+            "start": "6.62",
+            "end": "10.52"
+        },
+        {
+            "video_name": "TensorFlow in 100 Seconds",
+            "text": " It's most commonly used with Python, but can run in other languages like JavaScript, C++, and Java.",
+            "start": "10.52",
+            "end": "16.20"
+        },
+        {
+            "video_name": "TensorFlow in 100 Seconds",
+            "text": " At its core, it's just a library for programming with linear algebra and statistics.",
+            "start": "16.20",
+            "end": "20.54"
+        },
+        {
+            "video_name": "TensorFlow in 100 Seconds",
+            "text": " As you know, the word tensor describes a multilinear relationship between sets of algebraic objects within a vector space,",
+            "start": "20.54",
+            "end": "26.26"
+        },
+        {
+            "video_name": "TensorFlow in 100 Seconds",
+            "text": " a.k.a. a multi-dimensional array.",
+            "start": "26.26",
+            "end": "28.40"
+        },
+        {
+            "video_name": "TensorFlow in 100 Seconds",
+            "text": " What makes it special is its collection of APIs for data processing, visualization, model evaluation, and deployment",
+            "start": "28.50",
+            "end": "35.30"
+        },
+        {
+            "video_name": "TensorFlow in 100 Seconds",
+            "text": " that make deep learning accessible to the average developer.",
+            "start": "35.30",
+            "end": "38.40"
+        },
+        {
+            "video_name": "TensorFlow in 100 Seconds",
+            "text": " It's extremely portable and is able to run on tiny mobile CPUs or microcontrollers with TensorFlow Lite,",
+            "start": "38.40",
+            "end": "44.14"
+        },
+        {
+            "video_name": "TensorFlow in 100 Seconds",
+            "text": " can run in the browser with TensorFlow.js, while the core library can scale up to multiple GPUs,",
+            "start": "44.14",
+            "end": "49.36"
+        },
+        {
+            "video_name": "TensorFlow in 100 Seconds",
+            "text": " or run on tensor processing units, ships engineered specifically to run TensorFlow at a massive scale.",
+            "start": "49.36",
+            "end": "54.86"
+        },
+        {
+            "video_name": "TensorFlow in 100 Seconds",
+            "text": " It's used in medicine for object detection in MRI images, by Twitter to sort your timeline by tweet relevance,",
+            "start": "54.86",
+            "end": "60.90"
+        },
+        {
+            "video_name": "TensorFlow in 100 Seconds",
+            "text": " by Spotify to recommend music, by PayPal for fraud detection, in addition to many other applications like",
+            "start": "60.90",
+            "end": "66.44"
+        },
+        {
+            "video_name": "TensorFlow in 100 Seconds",
+            "text": " self-driving cars, natural language processing, and so on.",
+            "start": "66.44",
+            "end": "69.54"
+        },
+        {
+            "video_name": "TensorFlow in 100 Seconds",
+            "text": " To build your own neural network right now, create a Python file and install TensorFlow.",
+            "start": "69.54",
+            "end": "73.82"
+        },
+        {
+            "video_name": "TensorFlow in 100 Seconds",
+            "text": " Next, we'll need some data, like Fash and MNIST, which we can automatically import.",
+            "start": "73.82",
+            "end": "77.82"
+        },
+        {
+            "video_name": "TensorFlow in 100 Seconds",
+            "text": " The goal is to train a model that can predict the clothing type of each image.",
+            "start": "77.82",
+            "end": "81.12"
+        },
+        {
+            "video_name": "TensorFlow in 100 Seconds",
+            "text": " TensorFlow has a subclassing API for expert users, but also integrates with the beginner-friendly",
+            "start": "81.12",
+            "end": "86.16"
+        },
+        {
+            "video_name": "TensorFlow in 100 Seconds",
+            "text": " Keras library, which has a sequential API that can easily build neural networks layer by layer.",
+            "start": "86.16",
+            "end": "91.46"
+        },
+        {
+            "video_name": "TensorFlow in 100 Seconds",
+            "text": " We start with a flattened layer that takes the 28 by 28 pixel image as an input and converts it into a one-dimensional array.",
+            "start": "91.46",
+            "end": "98.00"
+        },
+        {
+            "video_name": "TensorFlow in 100 Seconds",
+            "text": " This input layer is then fed into a dense layer with 128 fully connected neurons or nodes.",
+            "start": "98.00",
+            "end": "103.60"
+        },
+        {
+            "video_name": "TensorFlow in 100 Seconds",
+            "text": " You can think of each node like its own linear regression.",
+            "start": "103.60",
+            "end": "106.28"
+        },
+        {
+            "video_name": "TensorFlow in 100 Seconds",
+            "text": " As each data point flows through it, it'll try to guess the output and gradually update a mapping of weights",
+            "start": "106.28",
+            "end": "111.24"
+        },
+        {
+            "video_name": "TensorFlow in 100 Seconds",
+            "text": " to determine the importance of a given variable.",
+            "start": "111.24",
+            "end": "113.44"
+        },
+        {
+            "video_name": "TensorFlow in 100 Seconds",
+            "text": " In this case, it uses a rectified linear activation function that will output the input if a certain threshold is met,",
+            "start": "113.44",
+            "end": "119.54"
+        },
+        {
+            "video_name": "TensorFlow in 100 Seconds",
+            "text": " otherwise it will just output zero.",
+            "start": "119.54",
+            "end": "121.34"
+        },
+        {
+            "video_name": "TensorFlow in 100 Seconds",
+            "text": " And the behavior of this layer can be customized by tuning its hyperparameters.",
+            "start": "121.34",
+            "end": "125.18"
+        },
+        {
+            "video_name": "TensorFlow in 100 Seconds",
+            "text": " Finally, we have our output layer, which is also dense, but is limited to 10 nodes,",
+            "start": "125.18",
+            "end": "129.44"
+        },
+        {
+            "video_name": "TensorFlow in 100 Seconds",
+            "text": " which corresponds to the total number of clothing types in the dataset.",
+            "start": "129.44",
+            "end": "132.64"
+        },
+        {
+            "video_name": "TensorFlow in 100 Seconds",
+            "text": " Now we can compile the model and tell it to optimize a certain loss function, like sparse categorical cross entropy.",
+            "start": "132.64",
+            "end": "138.70"
+        },
+        {
+            "video_name": "TensorFlow in 100 Seconds",
+            "text": " As we train the model for multiple epics, its accuracy should gradually improve.",
+            "start": "138.70",
+            "end": "142.80"
+        },
+        {
+            "video_name": "TensorFlow in 100 Seconds",
+            "text": " The end result is a model that makes a prediction with the likelihood that an image is a certain type of clothing.",
+            "start": "142.80",
+            "end": "147.90"
+        },
+        {
+            "video_name": "TensorFlow in 100 Seconds",
+            "text": " Congratulations, you just built a neural network.",
+            "start": "147.90",
+            "end": "150.50"
+        },
+        {
+            "video_name": "TensorFlow in 100 Seconds",
+            "text": " This has been TensorFlow in 100 seconds.",
+            "start": "150.50",
+            "end": "152.74"
+        },
+        {
+            "video_name": "TensorFlow in 100 Seconds",
+            "text": " Hit the like button if you want to see more short videos like this.",
+            "start": "152.74",
+            "end": "155.14"
+        },
+        {
+            "video_name": "TensorFlow in 100 Seconds",
+            "text": " Thanks for watching, and I will see you in the next one.",
+            "start": "155.14",
+            "end": "157.80"
+        }
+    ],
+    "full_text": " TensorFlow, an open-source machine learning framework famous for powering deep neural networks with high-level code. It was developed by the Google Brain team and first released in 2015. It's most commonly used with Python, but can run in other languages like JavaScript, C++, and Java. At its core, it's just a library for programming with linear algebra and statistics. As you know, the word tensor describes a multilinear relationship between sets of algebraic objects within a vector space, a.k.a. a multi-dimensional array. What makes it special is its collection of APIs for data processing, visualization, model evaluation, and deployment that make deep learning accessible to the average developer. It's extremely portable and is able to run on tiny mobile CPUs or microcontrollers with TensorFlow Lite, can run in the browser with TensorFlow.js, while the core library can scale up to multiple GPUs, or run on tensor processing units, ships engineered specifically to run TensorFlow at a massive scale. It's used in medicine for object detection in MRI images, by Twitter to sort your timeline by tweet relevance, by Spotify to recommend music, by PayPal for fraud detection, in addition to many other applications like self-driving cars, natural language processing, and so on. To build your own neural network right now, create a Python file and install TensorFlow. Next, we'll need some data, like Fash and MNIST, which we can automatically import. The goal is to train a model that can predict the clothing type of each image. TensorFlow has a subclassing API for expert users, but also integrates with the beginner-friendly Keras library, which has a sequential API that can easily build neural networks layer by layer. We start with a flattened layer that takes the 28 by 28 pixel image as an input and converts it into a one-dimensional array. This input layer is then fed into a dense layer with 128 fully connected neurons or nodes. You can think of each node like its own linear regression. As each data point flows through it, it'll try to guess the output and gradually update a mapping of weights to determine the importance of a given variable. In this case, it uses a rectified linear activation function that will output the input if a certain threshold is met, otherwise it will just output zero. And the behavior of this layer can be customized by tuning its hyperparameters. Finally, we have our output layer, which is also dense, but is limited to 10 nodes, which corresponds to the total number of clothing types in the dataset. Now we can compile the model and tell it to optimize a certain loss function, like sparse categorical cross entropy. As we train the model for multiple epics, its accuracy should gradually improve. The end result is a model that makes a prediction with the likelihood that an image is a certain type of clothing. Congratulations, you just built a neural network. This has been TensorFlow in 100 seconds. Hit the like button if you want to see more short videos like this. Thanks for watching, and I will see you in the next one."
+}

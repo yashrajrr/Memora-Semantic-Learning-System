@@ -1,0 +1,185 @@
+{
+    "chunks": [
+        {
+            "video_name": "Python in 100 Seconds",
+            "text": " Python, a high-level interpreted programming language famous for its Zen-like code.",
+            "start": "0.00",
+            "end": "5.20"
+        },
+        {
+            "video_name": "Python in 100 Seconds",
+            "text": " It's arguably the most popular language in the world because it's easy to learn,",
+            "start": "5.20",
+            "end": "9.04"
+        },
+        {
+            "video_name": "Python in 100 Seconds",
+            "text": " yet practical for serious projects. In fact, you're watching this YouTube video in a Python",
+            "start": "9.04",
+            "end": "14.16"
+        },
+        {
+            "video_name": "Python in 100 Seconds",
+            "text": " web application right now. It was created by Guido Van Rossum and released in 1991,",
+            "start": "14.16",
+            "end": "18.88"
+        },
+        {
+            "video_name": "Python in 100 Seconds",
+            "text": " who named it after Monty Python's flying circus, which is why you'll sometimes find spam and eggs",
+            "start": "18.88",
+            "end": "23.92"
+        },
+        {
+            "video_name": "Python in 100 Seconds",
+            "text": " instead of foo and bar in code samples. It's commonly used to build server-side applications,",
+            "start": "23.92",
+            "end": "28.72"
+        },
+        {
+            "video_name": "Python in 100 Seconds",
+            "text": " like web apps with the Django framework, and is the language of choice for big data analysis",
+            "start": "28.72",
+            "end": "33.36"
+        },
+        {
+            "video_name": "Python in 100 Seconds",
+            "text": " and machine learning. Many students choose Python to start learning to code because of its emphasis",
+            "start": "33.36",
+            "end": "38.00"
+        },
+        {
+            "video_name": "Python in 100 Seconds",
+            "text": " on readability as outlined by the Zen of Python. Beautiful is better than ugly, while explicit",
+            "start": "38.00",
+            "end": "43.60"
+        },
+        {
+            "video_name": "Python in 100 Seconds",
+            "text": " is better than implicit. Python is very simple, but avoids the temptation to sprinkle in magic",
+            "start": "43.60",
+            "end": "48.40"
+        },
+        {
+            "video_name": "Python in 100 Seconds",
+            "text": " that causes ambiguity. Its code is often organized into notebooks where individual cells can be",
+            "start": "48.40",
+            "end": "53.60"
+        },
+        {
+            "video_name": "Python in 100 Seconds",
+            "text": " executed, then documented in the same place. We're currently at version 3 of the language,",
+            "start": "53.60",
+            "end": "58.16"
+        },
+        {
+            "video_name": "Python in 100 Seconds",
+            "text": " and you can get started by creating a file that ends in .py or .ipynb to create an interactive",
+            "start": "58.16",
+            "end": "64.08"
+        },
+        {
+            "video_name": "Python in 100 Seconds",
+            "text": " notebook. Create a variable by setting a name equal to a value. It's strongly typed, which means",
+            "start": "64.08",
+            "end": "69.04"
+        },
+        {
+            "video_name": "Python in 100 Seconds",
+            "text": " values won't change in unexpected ways, but dynamic, so type annotations are not required.",
+            "start": "69.04",
+            "end": "73.68"
+        },
+        {
+            "video_name": "Python in 100 Seconds",
+            "text": " The syntax is highly efficient, allowing you to declare multiple variables on a single line,",
+            "start": "73.68",
+            "end": "78.08"
+        },
+        {
+            "video_name": "Python in 100 Seconds",
+            "text": " and define tuples, lists, and dictionaries with a literal syntax. Semi-colons are not required,",
+            "start": "78.08",
+            "end": "83.36"
+        },
+        {
+            "video_name": "Python in 100 Seconds",
+            "text": " and if you use them, an experienced Pythonista will say that your code is not Pythonic,",
+            "start": "83.36",
+            "end": "87.76"
+        },
+        {
+            "video_name": "Python in 100 Seconds",
+            "text": " instead of semi-colons, Python uses indentation to terminate or determine the scope of a line of",
+            "start": "87.76",
+            "end": "93.12"
+        },
+        {
+            "video_name": "Python in 100 Seconds",
+            "text": " code. Define a function with the def keyword, then indent the next line, usually by four spaces,",
+            "start": "93.12",
+            "end": "98.08"
+        },
+        {
+            "video_name": "Python in 100 Seconds",
+            "text": " to define the function body. We might then add a for loop to it, and indent that by another four",
+            "start": "98.08",
+            "end": "102.56"
+        },
+        {
+            "video_name": "Python in 100 Seconds",
+            "text": " spaces. This eliminates the need for curly braces and semi-colons found in many other languages.",
+            "start": "102.56",
+            "end": "107.60"
+        },
+        {
+            "video_name": "Python in 100 Seconds",
+            "text": " Python is a multi-paradigm language. We can apply functional programming patterns with things like",
+            "start": "107.60",
+            "end": "112.00"
+        },
+        {
+            "video_name": "Python in 100 Seconds",
+            "text": " anonymous functions using lambda. It also uses objects as an abstraction for data, allowing",
+            "start": "112.00",
+            "end": "116.88"
+        },
+        {
+            "video_name": "Python in 100 Seconds",
+            "text": " you to implement object-oriented patterns with things like classes and inheritance.",
+            "start": "116.88",
+            "end": "121.12"
+        },
+        {
+            "video_name": "Python in 100 Seconds",
+            "text": " It also has a huge ecosystem of third-party libraries, such as deep learning frameworks",
+            "start": "121.12",
+            "end": "125.84"
+        },
+        {
+            "video_name": "Python in 100 Seconds",
+            "text": " like TensorFlow, and wrappers for many high-performance low-level packages like Open",
+            "start": "125.84",
+            "end": "130.16"
+        },
+        {
+            "video_name": "Python in 100 Seconds",
+            "text": " Computer Vision, which are most often installed with the PIP package manager. This has been the",
+            "start": "130.16",
+            "end": "134.72"
+        },
+        {
+            "video_name": "Python in 100 Seconds",
+            "text": " Python programming language in 100 seconds. Hit the like button if you want to see more short",
+            "start": "134.72",
+            "end": "138.72"
+        },
+        {
+            "video_name": "Python in 100 Seconds",
+            "text": " videos like this. Thanks for watching, and I will see you in the next one.",
+            "start": "138.72",
+            "end": "143.12"
+        }
+    ],
+    "full_text": " Python, a high-level interpreted programming language famous for its Zen-like code. It's arguably the most popular language in the world because it's easy to learn, yet practical for serious projects. In fact, you're watching this YouTube video in a Python web application right now. It was created by Guido Van Rossum and released in 1991, who named it after Monty Python's flying circus, which is why you'll sometimes find spam and eggs instead of foo and bar in code samples. It's commonly used to build server-side applications, like web apps with the Django framework, and is the language of choice for big data analysis and machine learning. Many students choose Python to start learning to code because of its emphasis on readability as outlined by the Zen of Python. Beautiful is better than ugly, while explicit is better than implicit. Python is very simple, but avoids the temptation to sprinkle in magic that causes ambiguity. Its code is often organized into notebooks where individual cells can be executed, then documented in the same place. We're currently at version 3 of the language, and you can get started by creating a file that ends in .py or .ipynb to create an interactive notebook. Create a variable by setting a name equal to a value. It's strongly typed, which means values won't change in unexpected ways, but dynamic, so type annotations are not required. The syntax is highly efficient, allowing you to declare multiple variables on a single line, and define tuples, lists, and dictionaries with a literal syntax. Semi-colons are not required, and if you use them, an experienced Pythonista will say that your code is not Pythonic, instead of semi-colons, Python uses indentation to terminate or determine the scope of a line of code. Define a function with the def keyword, then indent the next line, usually by four spaces, to define the function body. We might then add a for loop to it, and indent that by another four spaces. This eliminates the need for curly braces and semi-colons found in many other languages. Python is a multi-paradigm language. We can apply functional programming patterns with things like anonymous functions using lambda. It also uses objects as an abstraction for data, allowing you to implement object-oriented patterns with things like classes and inheritance. It also has a huge ecosystem of third-party libraries, such as deep learning frameworks like TensorFlow, and wrappers for many high-performance low-level packages like Open Computer Vision, which are most often installed with the PIP package manager. This has been the Python programming language in 100 seconds. Hit the like button if you want to see more short videos like this. Thanks for watching, and I will see you in the next one."
+}

@@ -1,0 +1,305 @@
+{
+    "chunks": [
+        {
+            "video_name": "PyTorch_in_100_Seconds",
+            "text": " The Pytorch, an open-source deep learning framework used to build some of the world's most famous",
+            "start": "0.00",
+            "end": "4.96"
+        },
+        {
+            "video_name": "PyTorch_in_100_Seconds",
+            "text": " artificial intelligence products.",
+            "start": "4.96",
+            "end": "6.84"
+        },
+        {
+            "video_name": "PyTorch_in_100_Seconds",
+            "text": " It was created at the Meta AI Research Lab in 2016, but is actually derived from the",
+            "start": "6.84",
+            "end": "11.36"
+        },
+        {
+            "video_name": "PyTorch_in_100_Seconds",
+            "text": " Lua-based torch library that dates back to 2002.",
+            "start": "11.36",
+            "end": "14.60"
+        },
+        {
+            "video_name": "PyTorch_in_100_Seconds",
+            "text": " Fundamentally, it's a library for programming with tensors, which are basically just",
+            "start": "14.60",
+            "end": "18.56"
+        },
+        {
+            "video_name": "PyTorch_in_100_Seconds",
+            "text": " multi-dimensional arrays at represent data and parameters in deep neural networks.",
+            "start": "18.56",
+            "end": "23.20"
+        },
+        {
+            "video_name": "PyTorch_in_100_Seconds",
+            "text": " Sounds complicated, but it's focused on usability will have you training machine learning",
+            "start": "23.20",
+            "end": "26.64"
+        },
+        {
+            "video_name": "PyTorch_in_100_Seconds",
+            "text": " models with just a few lines of Python.",
+            "start": "26.64",
+            "end": "28.72"
+        },
+        {
+            "video_name": "PyTorch_in_100_Seconds",
+            "text": " In addition, it facilitates high performance parallel computing on a GPU, thanks to Nvidia's",
+            "start": "28.72",
+            "end": "33.80"
+        },
+        {
+            "video_name": "PyTorch_in_100_Seconds",
+            "text": " CUDA platform.",
+            "start": "33.80",
+            "end": "34.80"
+        },
+        {
+            "video_name": "PyTorch_in_100_Seconds",
+            "text": " Developers love prototyping with it, because it supports a dynamic computation graph, allowing",
+            "start": "34.80",
+            "end": "39.28"
+        },
+        {
+            "video_name": "PyTorch_in_100_Seconds",
+            "text": " models to be optimized at runtime.",
+            "start": "39.28",
+            "end": "41.20"
+        },
+        {
+            "video_name": "PyTorch_in_100_Seconds",
+            "text": " It does this by constructing a directed a cyclic graph consisting of functions that keeps track",
+            "start": "41.20",
+            "end": "46.28"
+        },
+        {
+            "video_name": "PyTorch_in_100_Seconds",
+            "text": " of all the executed operations on the tensors, allowing you to change the shape, size,",
+            "start": "46.28",
+            "end": "50.20"
+        },
+        {
+            "video_name": "PyTorch_in_100_Seconds",
+            "text": " and operations after every iteration if needed.",
+            "start": "50.20",
+            "end": "52.80"
+        },
+        {
+            "video_name": "PyTorch_in_100_Seconds",
+            "text": " Pytorch has been used to train models for computer vision AI like Tesla Auto pilot,",
+            "start": "52.80",
+            "end": "57.04"
+        },
+        {
+            "video_name": "PyTorch_in_100_Seconds",
+            "text": " image generators like stable diffusion, and speech recognition models like OpenAI, Whisper,",
+            "start": "57.04",
+            "end": "61.92"
+        },
+        {
+            "video_name": "PyTorch_in_100_Seconds",
+            "text": " just to name a few.",
+            "start": "61.92",
+            "end": "62.92"
+        },
+        {
+            "video_name": "PyTorch_in_100_Seconds",
+            "text": " To get started, install Pytorch and optionally CUDA, if you want to accelerate computing",
+            "start": "62.92",
+            "end": "67.08"
+        },
+        {
+            "video_name": "PyTorch_in_100_Seconds",
+            "text": " on your GPU.",
+            "start": "67.08",
+            "end": "68.08"
+        },
+        {
+            "video_name": "PyTorch_in_100_Seconds",
+            "text": " Now, import it into a Python file or notebook.",
+            "start": "68.08",
+            "end": "70.68"
+        },
+        {
+            "video_name": "PyTorch_in_100_Seconds",
+            "text": " Like I mentioned, a tensor is similar to a multi-dimensional array, create a 2D array or",
+            "start": "70.68",
+            "end": "75.08"
+        },
+        {
+            "video_name": "PyTorch_in_100_Seconds",
+            "text": " matrix with Python, then use torch to convert it into a tensor.",
+            "start": "75.08",
+            "end": "78.56"
+        },
+        {
+            "video_name": "PyTorch_in_100_Seconds",
+            "text": " Now we can run all kinds of computations on it, like we might convert all these integers",
+            "start": "78.56",
+            "end": "82.60"
+        },
+        {
+            "video_name": "PyTorch_in_100_Seconds",
+            "text": " into random floating points.",
+            "start": "82.60",
+            "end": "84.16"
+        },
+        {
+            "video_name": "PyTorch_in_100_Seconds",
+            "text": " We can also perform linear algebra by taking multiple tensors and multiplying them together.",
+            "start": "84.16",
+            "end": "89.24"
+        },
+        {
+            "video_name": "PyTorch_in_100_Seconds",
+            "text": " What you came here to do though is build a deep neural network, like an image classifier.",
+            "start": "89.24",
+            "end": "93.52"
+        },
+        {
+            "video_name": "PyTorch_in_100_Seconds",
+            "text": " To handle that, we can define a new class that inherits from the neural network module class.",
+            "start": "93.52",
+            "end": "98.32"
+        },
+        {
+            "video_name": "PyTorch_in_100_Seconds",
+            "text": " Inside the constructor, we can build it out later by layer.",
+            "start": "98.32",
+            "end": "101.00"
+        },
+        {
+            "video_name": "PyTorch_in_100_Seconds",
+            "text": " The flat and layer will take a multi-dimensional input, like an image, and convert it to",
+            "start": "101.00",
+            "end": "105.36"
+        },
+        {
+            "video_name": "PyTorch_in_100_Seconds",
+            "text": " one dimension.",
+            "start": "105.36",
+            "end": "106.36"
+        },
+        {
+            "video_name": "PyTorch_in_100_Seconds",
+            "text": " From there, sequential as you use, you create a container of layers that the data will flow",
+            "start": "106.36",
+            "end": "110.00"
+        },
+        {
+            "video_name": "PyTorch_in_100_Seconds",
+            "text": " through.",
+            "start": "110.00",
+            "end": "111.00"
+        },
+        {
+            "video_name": "PyTorch_in_100_Seconds",
+            "text": " As multiple nodes, where each node is like its own many statistical model.",
+            "start": "111.00",
+            "end": "114.72"
+        },
+        {
+            "video_name": "PyTorch_in_100_Seconds",
+            "text": " As each data point flows through it, it'll try to guess the output and gradually update",
+            "start": "114.72",
+            "end": "118.56"
+        },
+        {
+            "video_name": "PyTorch_in_100_Seconds",
+            "text": " a mapping of weights to determine the importance of a given variable.",
+            "start": "118.56",
+            "end": "121.96"
+        },
+        {
+            "video_name": "PyTorch_in_100_Seconds",
+            "text": " Linear is a fully connected layer that takes the flat and 28x28 image and transforms it",
+            "start": "121.96",
+            "end": "126.56"
+        },
+        {
+            "video_name": "PyTorch_in_100_Seconds",
+            "text": " to an output of 512.",
+            "start": "126.56",
+            "end": "128.60"
+        },
+        {
+            "video_name": "PyTorch_in_100_Seconds",
+            "text": " This layer is followed by a non-linear activation function.",
+            "start": "128.60",
+            "end": "131.96"
+        },
+        {
+            "video_name": "PyTorch_in_100_Seconds",
+            "text": " When activated, it means that feature might be important, and outputs the node, otherwise",
+            "start": "131.96",
+            "end": "135.80"
+        },
+        {
+            "video_name": "PyTorch_in_100_Seconds",
+            "text": " it just outputs zero.",
+            "start": "135.80",
+            "end": "137.20"
+        },
+        {
+            "video_name": "PyTorch_in_100_Seconds",
+            "text": " And finally, we finish with a fully connected layer that outputs the 10 labels the model",
+            "start": "137.20",
+            "end": "140.72"
+        },
+        {
+            "video_name": "PyTorch_in_100_Seconds",
+            "text": " is trying to predict.",
+            "start": "140.72",
+            "end": "141.84"
+        },
+        {
+            "video_name": "PyTorch_in_100_Seconds",
+            "text": " With these pieces in place, the next step is to define a forward method that describes",
+            "start": "141.84",
+            "end": "146.00"
+        },
+        {
+            "video_name": "PyTorch_in_100_Seconds",
+            "text": " the flow of data.",
+            "start": "146.00",
+            "end": "147.00"
+        },
+        {
+            "video_name": "PyTorch_in_100_Seconds",
+            "text": " And now instantiate the model to a GPU and pass it to input data.",
+            "start": "147.00",
+            "end": "150.72"
+        },
+        {
+            "video_name": "PyTorch_in_100_Seconds",
+            "text": " This will automatically call it forward method for training and prediction.",
+            "start": "150.72",
+            "end": "154.12"
+        },
+        {
+            "video_name": "PyTorch_in_100_Seconds",
+            "text": " Congratulations, you just fill Tane neural network.",
+            "start": "154.12",
+            "end": "156.72"
+        },
+        {
+            "video_name": "PyTorch_in_100_Seconds",
+            "text": " This has been PyTorch in 100 seconds.",
+            "start": "156.72",
+            "end": "158.84"
+        },
+        {
+            "video_name": "PyTorch_in_100_Seconds",
+            "text": " Thanks for watching, and I will see you in the next one.",
+            "start": "158.84",
+            "end": "161.20"
+        }
+    ],
+    "full_text": " The Pytorch, an open-source deep learning framework used to build some of the world's most famous artificial intelligence products. It was created at the Meta AI Research Lab in 2016, but is actually derived from the Lua-based torch library that dates back to 2002. Fundamentally, it's a library for programming with tensors, which are basically just multi-dimensional arrays at represent data and parameters in deep neural networks. Sounds complicated, but it's focused on usability will have you training machine learning models with just a few lines of Python. In addition, it facilitates high performance parallel computing on a GPU, thanks to Nvidia's CUDA platform. Developers love prototyping with it, because it supports a dynamic computation graph, allowing models to be optimized at runtime. It does this by constructing a directed a cyclic graph consisting of functions that keeps track of all the executed operations on the tensors, allowing you to change the shape, size, and operations after every iteration if needed. Pytorch has been used to train models for computer vision AI like Tesla Auto pilot, image generators like stable diffusion, and speech recognition models like OpenAI, Whisper, just to name a few. To get started, install Pytorch and optionally CUDA, if you want to accelerate computing on your GPU. Now, import it into a Python file or notebook. Like I mentioned, a tensor is similar to a multi-dimensional array, create a 2D array or matrix with Python, then use torch to convert it into a tensor. Now we can run all kinds of computations on it, like we might convert all these integers into random floating points. We can also perform linear algebra by taking multiple tensors and multiplying them together. What you came here to do though is build a deep neural network, like an image classifier. To handle that, we can define a new class that inherits from the neural network module class. Inside the constructor, we can build it out later by layer. The flat and layer will take a multi-dimensional input, like an image, and convert it to one dimension. From there, sequential as you use, you create a container of layers that the data will flow through. As multiple nodes, where each node is like its own many statistical model. As each data point flows through it, it'll try to guess the output and gradually update a mapping of weights to determine the importance of a given variable. Linear is a fully connected layer that takes the flat and 28x28 image and transforms it to an output of 512. This layer is followed by a non-linear activation function. When activated, it means that feature might be important, and outputs the node, otherwise it just outputs zero. And finally, we finish with a fully connected layer that outputs the 10 labels the model is trying to predict. With these pieces in place, the next step is to define a forward method that describes the flow of data. And now instantiate the model to a GPU and pass it to input data. This will automatically call it forward method for training and prediction. Congratulations, you just fill Tane neural network. This has been PyTorch in 100 seconds. Thanks for watching, and I will see you in the next one."
+}

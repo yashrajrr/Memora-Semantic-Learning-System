@@ -4,13 +4,3 @@
 __pycache__/
 *.env
 *venv
-videos/*
-audios/*
-json_data/*
-clean_json_data/*
-
-!videos/.gitkeep
-!audios/.gitkeep
-!json_data/.gitkeep
-!clean_json_data/.gitkeep
-
