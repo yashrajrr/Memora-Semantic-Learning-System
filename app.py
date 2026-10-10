@@ -13,16 +13,35 @@ from chat_history import (
     update_quiz_submission,
 )
 from get_output import ask_question, clean_output, create_quiz, get_topic_tags, reload_dataframe
+from database import health_check
 import process_audio
 import process_data
 import process_json
 import process_video
 
 app = Flask(__name__)
-app.secret_key = os.getenv("FLASK_SECRET_KEY", "memora-dev-secret-key")
+app_env = os.getenv("APP_ENV", "development").lower()
+secret_key = os.getenv("FLASK_SECRET_KEY")
+if app_env == "production" and not secret_key:
+    raise RuntimeError("FLASK_SECRET_KEY must be set when APP_ENV=production.")
+app.secret_key = secret_key or "memora-dev-secret-key"
 app.config["UPLOAD_FOLDER"] = "videos"
-app.config["MAX_CONTENT_LENGTH"] = 512 * 1024 * 1024
+try:
+    max_upload_mb = int(os.getenv("MAX_UPLOAD_MB", "512"))
+except ValueError:
+    max_upload_mb = 512
+app.config["MAX_CONTENT_LENGTH"] = max(1, max_upload_mb) * 1024 * 1024
 ALLOWED_VIDEO_EXTENSIONS = {"mp4", "webm", "mov", "mkv", "avi"}
+
+
+@app.get("/healthz")
+def healthz():
+    """Render health probe; never returns credentials or database details."""
+
+    if os.getenv("REQUIRE_DATABASE", "false").lower() in {"1", "true", "yes"}:
+        if not health_check():
+            return jsonify({"status": "not_ready", "database": "unavailable"}), 503
+    return jsonify({"status": "ok"})
 
 
 def build_sources(chunks):
@@ -330,4 +349,9 @@ def clear_history():
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000,debug=True, use_reloader=False)
+    app.run(
+        host="0.0.0.0",
+        port=int(os.getenv("PORT", "5000")),
+        debug=app_env != "production",
+        use_reloader=False,
+    )

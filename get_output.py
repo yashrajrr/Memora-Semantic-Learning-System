@@ -3,6 +3,7 @@ import re
 
 import joblib
 import numpy as np
+import pandas as pd
 from dotenv import load_dotenv
 from openai import OpenAI
 from sentence_transformers import SentenceTransformer
@@ -65,8 +66,9 @@ def build_dataframe_if_needed():
     process_data.to_build_dataframe()
 
 
-def load_dataframe():
-    build_dataframe_if_needed()
+def load_dataframe(build_if_needed=False):
+    if build_if_needed:
+        build_dataframe_if_needed()
     loaded_df = joblib.load(DATAFRAME_PATH)
     if loaded_df.empty or "embedding" not in loaded_df:
         raise RuntimeError("dataframe.joblib does not contain transcript embeddings.")
@@ -74,8 +76,14 @@ def load_dataframe():
     return loaded_df, np.vstack(loaded_df.embedding.values)
 
 
-# Load once after making sure the saved dataframe exists.
-df, stored_embeddings = load_dataframe()
+# Keep web-process import safe when a fresh Render instance has no legacy
+# joblib artifacts yet.  The database-backed path can boot independently, and
+# the legacy rebuild remains explicit through reload_dataframe().
+try:
+    df, stored_embeddings = load_dataframe()
+except (FileNotFoundError, RuntimeError, ValueError, EOFError):
+    df = pd.DataFrame(columns=["video_name", "text", "start", "end", "id", "embedding"])
+    stored_embeddings = np.empty((0, 384), dtype=float)
 TAG_STOPWORDS = {
     "about", "after", "also", "because", "been", "being", "from", "have",
     "into", "like", "more", "most", "that", "their", "then", "there",
@@ -106,7 +114,7 @@ def create_embedding(texts):
 
 def reload_dataframe():
     global df, stored_embeddings
-    df, stored_embeddings = load_dataframe()
+    df, stored_embeddings = load_dataframe(build_if_needed=True)
 
 
 def get_topic_tags(limit=16):
@@ -142,6 +150,11 @@ def retrieve_chunks(question, top_results=5, video_name=""):
     """
     Returns top matching subtitle chunks.
     """
+
+    if df.empty or stored_embeddings.size == 0:
+        raise RuntimeError(
+            "No transcript embeddings are available. Upload and process a video first."
+        )
 
     question_embedding = np.array(create_embedding([question])[0])
 

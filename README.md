@@ -205,6 +205,54 @@ Open:
 http://127.0.0.1:5000/
 ```
 
+Health checks are available at `http://127.0.0.1:5000/healthz`. In production,
+set `REQUIRE_DATABASE=true` so the endpoint reports `503` when PostgreSQL is
+unavailable.
+
+## Supabase and Render deployment
+
+The repository now contains the version-controlled Supabase migration at
+`supabase/migrations/20261010000000_initial_schema.sql`. It creates the
+pgvector-backed schema, processing-job tables, chat/quiz tables, indexes, and
+the `match_transcript_chunks` function. The application keeps schema changes
+explicit; it does not run migrations automatically on every web-service boot.
+
+Install the Supabase CLI, then authenticate and link the project:
+
+```bash
+npx supabase login
+npx supabase init
+npx supabase link --project-ref yrlnigaomvcklhohfdcc
+```
+
+Apply the reviewed migration with the linked CLI:
+
+```bash
+npx supabase db push
+```
+
+Alternatively, from a trusted machine or a Render one-off shell with
+`DATABASE_URL` set:
+
+```bash
+python migrate.py
+```
+
+Set `DATABASE_URL` to the server-side Supabase PostgreSQL connection string.
+Do not put a database password, service-role key, or other privileged value in
+templates, browser JavaScript, Git, or `.env.example`. The current MVP has no
+browser authentication yet, so the schema enables RLS without public policies;
+the server must use its private PostgreSQL connection. Owner-aware policies
+should be added when Supabase Auth is introduced.
+
+Render can deploy the web service from `render.yaml`. It uses Gunicorn, binds
+to Render's `$PORT`, installs FFmpeg through the Dockerfile when Docker is
+selected, and probes `/healthz`. Configure at least `FLASK_SECRET_KEY`,
+`DATABASE_URL`, `OPENROUTER_API_KEY`, `OPENROUTER_MODEL`, `WHISPER_MODEL`, and
+`REQUIRE_DATABASE=true` in the Render dashboard. The current upload route is
+still synchronous and local-file based; use persistent Supabase Storage and a
+database-backed worker before accepting long-running production uploads.
+
 Main pages:
 
 - `/` - chat and quiz sessions

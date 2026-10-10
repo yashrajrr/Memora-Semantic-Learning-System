@@ -1,0 +1,30 @@
+services:
+  - type: web
+    name: memora-web
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    startCommand: gunicorn --bind 0.0.0.0:$PORT --workers 1 --threads 2 --timeout 120 wsgi:app
+    healthCheckPath: /healthz
+    autoDeploy: true
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: REQUIRE_DATABASE
+        value: "true"
+      - key: FLASK_SECRET_KEY
+        generateValue: true
+      - key: DATABASE_URL
+        sync: false
+      - key: OPENROUTER_API_KEY
+        sync: false
+      - key: OPENROUTER_MODEL
+        value: openai/gpt-oss-20b:free
+      - key: WHISPER_MODEL
+        value: tiny
+      - key: MAX_UPLOAD_MB
+        value: "512"
+
+# A separate Render worker should be added after the database-backed processor
+# is enabled in the application.  Do not add a worker that only runs Flask
+# request code: Render web disks are ephemeral and requests are time-limited.
